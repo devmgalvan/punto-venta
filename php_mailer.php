@@ -13,7 +13,7 @@ if (isset($_GET['mail'])) {
 
     if (isset($_POST['mail'])) {
 
-        $destinatario = "miguelsanfer7@gmail.com";
+        $destinatario = "XXXXXXXXXXXXXXXXX";
         $asunto       = "Este mensaje es de prueba";
         $cuerpo       = '
 <html>
@@ -34,19 +34,19 @@ if (isset($_GET['mail'])) {
         $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
 
 //dirección del remitente
-        $headers .= "From: Miguel Angel Galvan Dongil <mgalvandongil@gmail.com>\r\n";
+        $headers .= "From: Miguel Angel XXXXXX XXXXXX <XXXXXXXXXXXXX@gmail.com>\r\n";
 
 //dirección de respuesta, si queremos que sea distinta que la del remitente
-        $headers .= "Reply-To: mgalvandongil@gmail.com\r\n";
+        $headers .= "Reply-To: XXXXXXXXXXXXX@gmail.com\r\n";
 
 //ruta del mensaje desde origen a destino
-        $headers .= "Return-path: mgalvandongil@gmail.com\r\n";
+        $headers .= "Return-path: XXXXXXXXXXXXX@gmail.com\r\n";
 
 //direcciones que recibirán copia
-        $headers .= "Cc: mgalvandongil@gmail.com\r\n";
+        $headers .= "Cc: XXXXXXXXXXXXX@gmail.com\r\n";
 
 //direcciones que recibirán copia oculta
-        $headers .= "Bcc: mgalvandongil@gmail.com\r\n";
+        $headers .= "Bcc: XXXXXXXXXXXXX@gmail.com\r\n";
 
         mail($destinatario, $asunto, $cuerpo, $headers)
 
