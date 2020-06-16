@@ -41,9 +41,9 @@ CREATE TABLE IF NOT EXISTS `administrador` (
 --
 
 INSERT INTO `administrador` (`id`, `usuario`, `pass`, `nombre`, `apellido`, `correo`, `nive_usua`) VALUES
-(3, 'mgalvan', 'admin', 'Miguel ', 'Galvan', 'miguelgalvan@cpmama.local', 1),
-(4, ' javi', '654321', 'Javier', 'Muñoz', 'javiermuñoz@cpmama.local', 1),
-(5, 'angelicaverdu', '123456', 'Angelica', 'Verdu', 'angelicaverdu@cpmama.local', 2);
+(3, 'mgalvan', 'admin', 'Miguel ', 'Galvan', 'XXXXXXXXXX@XXXXXXX.local', 1),
+(4, ' XXXXX', '654321', 'XXXXX', 'XXXXXXX', 'XXXXXXXXXX@XXXXXXX.local', 1),
+(5, 'XXXXXXX', '123456', 'XXXXXXX', 'XXXXXXX', 'XXXXXXXX@XXXXXX.local', 2);
 
 -- --------------------------------------------------------
 
@@ -103,10 +103,10 @@ CREATE TABLE IF NOT EXISTS `movimientos` (
 --
 
 INSERT INTO `movimientos` (`id_movimientos`, `cantidadm`, `fecha_movimiento`, `tipo_movimiento`, `admin`, `id_producto_m`, `motivo`) VALUES
-(1, 2, '2018-06-14 15:50:13', 'ENTRADA', 'Javier', 10, 'reparacion'),
-(2, 0, '2018-06-14 15:51:50', 'SALIDA', 'Javier', 1, 'entrega'),
-(3, 0, '2018-06-14 15:58:22', 'ENTRADA', 'Angelica', 10, 'reparacion'),
-(4, 0, '2018-06-14 15:59:33', 'SALIDA', 'Angelica', 2, 'entrega'),
+(1, 2, '2018-06-14 15:50:13', 'ENTRADA', 'XXXX', 10, 'reparacion'),
+(2, 0, '2018-06-14 15:51:50', 'SALIDA', 'XXXXXXXX', 1, 'entrega'),
+(3, 0, '2018-06-14 15:58:22', 'ENTRADA', 'XXXXXXXXX', 10, 'reparacion'),
+(4, 0, '2018-06-14 15:59:33', 'SALIDA', 'XXXXXXXXX', 2, 'entrega'),
 (5, 15, '2018-06-19 13:27:59', 'ENTRADA', 'Miguel ', 1, 'compra'),
 (6, 100, '2018-06-19 14:42:17', 'ENTRADA', 'Miguel ', 2, 'compra'),
 (7, 100, '2018-06-19 14:43:12', 'ENTRADA', 'Miguel ', 9, 'reparacion'),
@@ -116,9 +116,9 @@ INSERT INTO `movimientos` (`id_movimientos`, `cantidadm`, `fecha_movimiento`, `t
 (11, 4, '2018-06-21 14:09:01', 'SALIDA', 'Miguel ', 3, 'venta'),
 (12, 52000, '2018-06-21 14:37:36', 'ENTRADA', 'Miguel ', 4, 'compra'),
 (13, 850, '2018-07-10 18:45:42', 'ENTRADA', 'Miguel ', 5, 'compra'),
-(14, 15, '2018-08-08 15:16:37', 'SALIDA', ' JAVIER', 2, 'venta'),
-(15, 2, '2018-08-27 14:23:28', 'SALIDAD', ' JAVIER', 2, 'venta'),
-(16, 25, '2018-08-27 14:28:04', 'ENTRADA', ' JAVIER', 4, 'compra'),
+(14, 15, '2018-08-08 15:16:37', 'SALIDA', ' XXXXXXXXXX', 2, 'venta'),
+(15, 2, '2018-08-27 14:23:28', 'SALIDAD', ' XXXXXXXXX', 2, 'venta'),
+(16, 25, '2018-08-27 14:28:04', 'ENTRADA', ' JXXXXXX', 4, 'compra'),
 (17, 5, '2018-09-03 14:51:20', 'ENTRADA', 'Miguel ', 15, 'compra'),
 (18, 15, '2018-09-14 15:15:52', 'ENTRADA', 'Miguel ', 16, 'compra'),
 (19, 150, '2018-09-14 15:15:59', 'ENTRADA', 'Miguel ', 17, 'compra');
@@ -188,9 +188,9 @@ CREATE TABLE IF NOT EXISTS `proveedores` (
 --
 
 INSERT INTO `proveedores` (`id_proveedores`, `cif`, `nombre`, `correo`, `fechai`, `direccion`, `telefono`, `poblacion`, `provincia`, `cp`, `personal_contacto`, `movil`) VALUES
-(8, 'A251549684', 'CENTRO DE PATOLOGIA DE LA MAMA SA', 'CENTRE@CENTRO.ES', '2018-05-24', 'JOSE ABASCAL, 40 3 IZQ', 914474621, 'MADRID', 'MADRID', '28830', 'ADOLFO DOMINGUEZ', 69878548),
-(9, 'A123456798', 'MYBREAST', 'MYBREASTSL@EMAIL.COM', '', 'CALLE JOSE ABASCAL ', 912345678, 'VALENCIA', 'MADRID', '28857', 'JAVIER MUNOZ', 678909878),
-(10, 'A123456780', 'PMC', 'INFO@PMC.ES', '', 'C/ SIERRA ELVIRA, Nº 11', 916066606, 'FUENLABRADA', 'MADRID', '28474', 'WEB5', 916066606);
+(8, 'XXXXXXXXXX', 'CENTRO DE PXXXXXXXXXXXXXX', 'XXXXXXXXXXXXX', '2018-05-24', 'JXXXXXXXXXXXXXXXXXX', 'XXXXXXXXXXX', 'MADRID', 'MADRID', '2XXXXXXXX, 'XXXXXXXXXXXXXXXX', XXXXXXXX),
+(9, 'A123456798', 'XXXXXXXXXXXXXX', 'XXXXXXXXXXXXX@EMAIL.COM', '', 'XXXXXXXXXXXXX', 91XXXXXX8, 'XXXXXXX', 'MADRID', '2XXXX', 'JXXXXXX', 6XXXXXXX),
+(10, 'A123456780', 'XXXXX', 'XXXXXX@XXXXX.ES', '', 'XXXXXXXXXXXXXXXXX', 916066606, 'XXXXXXXXX', 'MADRID', '28474', 'WXXXX', XXXXX);
 
 -- --------------------------------------------------------
 
